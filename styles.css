@@ -1,0 +1,78 @@
+/* Use the . to indicate a class */
+
+.red{
+    color: rgb(158, 23, 6);
+    }
+    
+    .gold{
+    color: gold;
+    }
+    #myParagraph{
+     <--   color: blue; -->
+    }
+    
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    body {
+        font-family: Arial, Helvitica, sans-serif;        
+        background-color: rgb(207, 204, 204);
+      }
+     #facts-section h2{
+          text-decoration: underline;
+      }
+
+section#quotes-section h2 {text-decoration: underline;}
+blockquote {font-style: italic;}
+
+section#links-section h2 {text-decoration: underline;}
+
+th {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+      }
+  td, th {
+    padding: 8px;
+    text-align: left;
+  }
+  thead th {
+    background-color: #ccc;
+    font-weight: bold;
+  }
+  tbody td {
+    border-bottom: 1px solid #ddd;
+  }
+  tbody td:last-child {
+    border-bottom: none;
+  }
+  tr:nth-child() {
+    background-color: #f2f2f2;
+  }
+  td:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  td:nth-child(odd) {
+    background-color: #ada8a8;
+  }
+  /* define three equal columns */
+  td {
+    width: calc(100% / 3);
+    vertical-align: top;
+  }
+
+  #character-grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+    align-items: left;
+    border-bottom: 1px solid black;
+      /*
+  }
