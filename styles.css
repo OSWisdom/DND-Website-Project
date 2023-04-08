@@ -69,7 +69,7 @@ table {
   #character-grid {
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 5px;
     column-gap: 5px;
     align-items: left;
