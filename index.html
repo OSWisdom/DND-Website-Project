@@ -1,87 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Website</title>
-<link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style>
+        /* Resetting padding and margins */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #999999;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styling */
+        header {
+            width: 100%;
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Main content styling */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 800px; /* Adjusts for larger screens */
+            margin-top: 20px;
+        }
+
+        /* Button container styling */
+        .button-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            width: 100%; /* Buttons take full width */
+        }
+
+        /* Button styling */
+        .btn {
+            padding: 20px;
+            background-color: #666;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            width: 100%; /* Ensures buttons stretch fully inside the grid */
+        }
+
+            .btn:hover {
+                background-color: #888;
+            }
+
+        /* Blockquote styling */
+        blockquote {
+            margin: 10px 0;
+            font-style: italic;
+            color: #222;
+        }
+
+        /* Ensure good spacing on smaller screens */
+        @media (max-width: 600px) {
+            .button-container {
+                grid-template-columns: 1fr; /* Buttons become full-width on small screens */
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <div style="text-align: center;">
-            <h1 id=title> Alex's D&D Page</h1>
+        <h1>Alex's D&D Page</h1>
     </header>
-    <div>
-        <main id="main-grid">
-    </div>
 
     <main>
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <blockquote><p>-Dungeons and dragons is just math pretending to be skyrim.</p></blockquote>
-            <blockquote><p>-Remember that it's not players vs. the DM, it's players vs. the world.</p></blockquote>
-            <style>
-                /* Resetting padding and margins */
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                }
+        <blockquote>
+            <p>- Dungeons and Dragons is just math pretending to be Skyrim.</p>
+        </blockquote>
+        <blockquote>
+            <p>- Remember that it's not players vs. the DM, it's players vs. the world.</p>
+        </blockquote>
 
-                /* Ensures body takes up full height */
-                body {
-                    height: 100vh;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #999999;
-                }
+        <div class="button-container">
+            <a href="Character Builds.html" class="btn">Character Builds</a>
+            <a href="Play History.html" class="btn">Play History</a>
+            <a href="Owned Materials.html" class="btn">Owned Materials</a>
+            <a href="Wishlist.html" class="btn">Wishlist</a>
+            <a href="Useful Links.html" class="btn">Useful Links</a>
+            <a href="House Links.html" class="btn">House Links</a>
+            <a href="For New Players.html" class="btn">For New Players</a>
+            <a href="Videos.html" class="btn">Videos</a>
+        </div>
+    </main>
 
-                /* Wrapper for buttons */
-                .button-container {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    gap: 10px;
-                    width: 90%; /* Adjusts to fit mobile screens */
-                    max-width: 400px; /* Limits size on larger screens */
-                }
-
-                /* Button styling */
-                .btn {
-                    padding: 15px;
-                    text-align: center;
-                    background-color: #999999;
-                    color: white;
-                    border: none;
-                    border-radius: 5px;
-                    font-size: 16px;
-                    text-decoration: none;
-                    transition: background-color 0.3s;
-                }
-
-                    .btn:hover {
-                        background-color: #C0C0C0;
-                    }
-            </style>
-        </head>
-        <body>
-
-            <div class="button-container">
-                <!-- 8 buttons -->
-                <a href="Character Builds.html" class="btn">Character Builds</a>
-                <a href="Play History.html" class="btn">Play History</a>
-                <a href="Owned Materials.html" class="btn">Owned Materials</a>
-                <a href="Wishlist.html" class="btn">Wishlist</a>
-                <a href="Useful Links.html" class="btn">Useful Links</a>
-                <a href="House Links.html" class="btn">House Links</a>
-                <a href="For New Players.html" class="btn">For New Players</a>
-                <a href="Videos.html" class="btn">Videos</a>
-            </div>
-
-        </body>
-    </html>
+</body>
 </html>
